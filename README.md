@@ -106,5 +106,14 @@ http://localhost:3001/#/photo-wall
 - 左メニューにあるカスタマーフィードバックで以下をそのまま貼り付けて送信する。  
   `%6PPi37DBxP4lDwlriuaxP15HaDJpsUXY5TspVmie%`
 
+#### CSP Bypass
+- プロフィールページを開いて、usernameに以下ペイロードを入れて、`Set Username`  
+  `<script>alert(`xss`)</script>`
+
+### なかなか難しくてチャレンジしても課題解決しないものたち
+#### CSRF
+https://cysec148.hatenablog.com/entry/2021/07/02/202227 を参考にやってみました。  
+**Burp Suite Professional** を使ってやってみましたが、CSRFが成功せず。
+Juice ShopをEC2とかに立てて、他ドメインからやる方法ならいけると思います。
 
 以上
