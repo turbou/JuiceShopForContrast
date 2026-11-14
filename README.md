@@ -111,6 +111,12 @@ http://localhost:3001/#/photo-wall
   `<script>alert(`xss`)</script>`
 
 ### なかなか難しくてチャレンジしても課題解決しないものたち
+#### Security Advisor
+本プロジェクトの`.well-known/csaf`下にある未解決のissueから、CVE番号を探して、それについて問い合わせるという課題  
+- 左メニューにあるカスタマーフィードバックで以下のメッセージを聞いてみる。  
+  `CVE-2020-15084の問題はまだ解決されていませんか？`  
+**でも課題解決しない。**
+
 #### CSRF
 https://cysec148.hatenablog.com/entry/2021/07/02/202227 を参考にやってみました。  
 **Burp Suite Professional** を使ってやってみましたが、CSRFが成功せず。
