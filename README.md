@@ -81,16 +81,26 @@ http://localhost:3001/#/web3-sandbox
 にアクセスするだけ
 
 #### Visual Geo Stalking
+**emma**の秘密の質問の答えを推測して、パスワードを勝手にリセットしてしまいます。  
+- ログイン画面のパスワードを忘れた場合はページに遷移
+- 各項目に以下を入れて、パスワードをリセットする。
+  - メアド：`emma@juice-sh.op`
+  - 秘密の質問：`ITsec`
+  - 適当なパスワードをセット
+
+以下のフォトページにヒントが隠されているということです。  
 http://localhost:3001/#/photo-wall
-パスワードを忘れた場合はページで
-メアド：emma@juice-sh.op
-秘密の質問：ITsec
-適当なパスワードでリセット
 
 #### Meta Geo Stalking
-メアド：john@juice-sh.op
-秘密の質問：Daniel Boone National Forest
-適当なパスワードでリセット
+**john**の秘密の質問の答えを推測して、パスワードを勝手にリセットしてしまいます。  
+- ログイン画面のパスワードを忘れた場合はページに遷移
+- 各項目に以下を入れて、パスワードをリセットする。
+  - メアド：`john@juice-sh.op`
+  - 秘密の質問：`Daniel Boone National Forest`
+  - 適当なパスワードをセット
+
+以下のフォトページにヒントが隠されているということです。  
+http://localhost:3001/#/photo-wall
 
 #### Leaked API key
 - 左メニューにあるカスタマーフィードバックで以下をそのまま貼り付けて送信する。  
