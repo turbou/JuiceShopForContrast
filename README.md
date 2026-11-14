@@ -71,6 +71,30 @@ https://cysec148.hatenablog.com/entry/2021/06/26/085030 を参考に購入まで
 そして、注文追跡画面を開いてから、URLが以下のようになるように`id`クエリパラメータにペイロードを入れて実行します。  
 `localhost:3001/#/track-result/new?id=<iframe src="javascript:alert(`xss`)">`
 
+#### SSRF
+- ユーザープロファイルのgravater urlに以下を貼り付けてLINK  
+  `http://localhost:3001/solve/challenges/server-side?key=tRy_H4rd3r_n0thIng_iS_Imp0ssibl3`
+**ASSESSで検知できてないようです。**
+
+#### Web3 Sandbox
+http://localhost:3001/#/web3-sandbox
+にアクセスするだけ
+
+#### Visual Geo Stalking
+http://localhost:3001/#/photo-wall
+パスワードを忘れた場合はページで
+メアド：emma@juice-sh.op
+秘密の質問：ITsec
+適当なパスワードでリセット
+
+#### Meta Geo Stalking
+メアド：john@juice-sh.op
+秘密の質問：Daniel Boone National Forest
+適当なパスワードでリセット
+
+#### Leaked API key
+- 左メニューにあるカスタマーフィードバックで以下をそのまま貼り付けて送信する。  
+  `%6PPi37DBxP4lDwlriuaxP15HaDJpsUXY5TspVmie%`
 
 
 以上
