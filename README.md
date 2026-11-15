@@ -132,15 +132,12 @@ http://localhost:3001/#/photo-wall
   ```
 
 #### CSP Bypass
-https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074
-に参考があるけど、うまくいったりいかなかったり。  
+https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074  
+の「5. CSP Bypass XSS」にも詳細があります。でも、うまくいったりいかなかったり。  
 - プロフィールページを開いて、usernameに以下ペイロードを入れて、`Set Username`  
   ```
   <script>alert(`xss`)</script>
   ```
-でもうまくいかないこと多々あり。  
-https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074  
-の「5. CSP Bypass XSS」にも詳細があります。
 
 ### なかなか難しくてチャレンジしても課題解決しないものたち
 #### Security Advisor
