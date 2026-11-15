@@ -69,12 +69,14 @@
     "test:server": "node --import ./test/server/helpers/test-env.mjs --import tsx --test --test-force-exit \"test/server/**/*.unit.test.ts\"",
     "test:server:coverage": "nyc --report-dir=./coverage/server-tests npm run test:server",
     "test:api": "node --import ./test/api/helpers/test-env.mjs --import tsx --test --test-force-exit \"test/api/**/*.test.ts\"",
+    "test:api2": "node --import ./test/api/helpers/test-env.mjs --import tsx --test --test-force-exit \"test/api/**/takas.test.ts\"",
     "test:api:coverage": "nyc --report-dir=./coverage/api-tests npm run test:api",
     "test:e2e": "npm run cypress:run",
     "rsn": "node --import tsx rsn/rsn.ts",
     "rsn:update": "node --import tsx rsn/rsn-update.ts",
     "vagrant": "cd vagrant && vagrant up",
-    "sbom": "cyclonedx-npm --omit=dev --output-format=JSON --output-file=bom.json"
+    "sbom": "cyclonedx-npm --omit=dev --output-format=JSON --output-file=bom.json",
+    "contrast": "node --import @contrast/agent build/app"
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
@@ -92,6 +94,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^2.0.35",
+    "@contrast/agent": "^5.69.0",
     "@fontsource/roboto": "^5.2.9",
     "@simplewebauthn/server": "^14.0.3",
     "ai": "^6.0.116",

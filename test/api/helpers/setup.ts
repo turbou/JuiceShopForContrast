@@ -8,5 +8,11 @@ import type { Sequelize } from 'sequelize'
 import { createApp } from '../../../server'
 
 export async function createTestApp (): Promise<{ app: Express, sequelize: Sequelize }> {
-  return await createApp({ inMemoryDb: true })
+  const app = (process.env.URL ||
+    'http://localhost:3001') as unknown as Express
+  const sequelize = {} as unknown as Sequelize
+  return {
+    app,
+    sequelize,
+  }
 }

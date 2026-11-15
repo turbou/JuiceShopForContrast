@@ -13,11 +13,14 @@ export default defineConfig({
     runMode: 2
   },
   e2e: {
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://localhost:3001',
     specPattern: 'test/cypress/e2e/**.spec.ts',
     downloadsFolder: 'test/cypress/downloads',
     fixturesFolder: false,
     supportFile: 'test/cypress/support/e2e.ts',
+    // excludeSpecPattern: [
+    //   '**/b2bOrder.spec.ts'
+    // ],
     setupNodeEvents (on: any) {
       on('task', {
         GenerateCoupon (discount: number) {

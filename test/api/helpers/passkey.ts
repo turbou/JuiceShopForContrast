@@ -12,7 +12,7 @@ type CBORType = Parameters<typeof isoCBOR.encode>[0]
 
 // The server derives the relying party from the request's Host/X-Forwarded-* headers (see
 // routes/passkey.ts). Tests send `Host: localhost:3000` unless they exercise another origin.
-export const ORIGIN = 'http://localhost:3000'
+export const ORIGIN = 'http://localhost:3001'
 
 export interface CraftOptions {
   origin?: string
