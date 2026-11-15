@@ -71,21 +71,32 @@ npm run test:api2
 #### SSTi
 - 適当なユーザーでログインしてプロフィールを表示
 - usernameに以下、どちらも入れて保存してみる。  
-  `#{6*6}`, `#{global.process.mainModule.require('child_process').execSync('id').toString()}`
+  ```
+  #{6*6}
+  ```
+  ```
+  #{global.process.mainModule.require('child_process').execSync('id').toString()}
+  ```
 
 #### DOM XSS
 - 検索ボックスに以下を入力して検索  
-  `<iframe src="javascript:alert('xss')">`
+  ```
+  <iframe src="javascript:alert(`xss`)">
+  ```
   ※エスケープされないようにしてください。
 
 #### Reflected XSS
 https://cysec148.hatenablog.com/entry/2021/06/26/085030 を参考に購入まで完了します。  
 そして、注文追跡画面を開いてから、URLが以下のようになるように`id`クエリパラメータにペイロードを入れて実行します。  
-`localhost:3001/#/track-result/new?id=<iframe src="javascript:alert('xss')">`
+```
+localhost:3001/#/track-result/new?id=<iframe src="javascript:alert(`xss`)">
+```
 
 #### SSRF
 - ユーザープロファイルのgravater urlに以下を貼り付けてLINK  
-  `http://localhost:3001/solve/challenges/server-side?key=tRy_H4rd3r_n0thIng_iS_Imp0ssibl3`
+  ```
+  http://localhost:3001/solve/challenges/server-side?key=tRy_H4rd3r_n0thIng_iS_Imp0ssibl3
+  ```
 **ASSESSで検知できてないようです。**
 
 #### Web3 Sandbox
