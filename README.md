@@ -132,6 +132,8 @@ http://localhost:3001/#/photo-wall
   ```
 
 #### CSP Bypass
+https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074
+に参考があるけど、うまくいったりいかなかったり。  
 - プロフィールページを開いて、usernameに以下ペイロードを入れて、`Set Username`  
   ```
   <script>alert(`xss`)</script>
