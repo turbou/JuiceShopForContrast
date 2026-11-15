@@ -126,7 +126,12 @@ http://localhost:3001/#/web3-sandbox
 以下のフォトページにヒントが隠されているということです。  
 http://localhost:3001/#/photo-wall
 
-### 8. Meta Geo Stalking
+### 8. Mass Dispel
+課題解決をしていくと、スコアボードページに緑色のバナーがたくさん積み重なっていきますが  
+それを一度に消すとこの課題が解決となります。  
+やり方はどれか１つの緑色バナーのバツ印を、**Shift**を押しながらクリックするだけです。
+
+### 9. Meta Geo Stalking
 **john**の秘密の質問の答えを推測して、パスワードを勝手にリセットしてしまいます。  
 - ログイン画面のパスワードを忘れた場合はページに遷移
 - 各項目に以下を入れて、パスワードをリセットする。
@@ -137,13 +142,13 @@ http://localhost:3001/#/photo-wall
 以下のフォトページにヒントが隠されているということです。  
 http://localhost:3001/#/photo-wall
 
-### 9. Leaked API key
+### 10. Leaked API key
 - 左メニューにあるカスタマーフィードバックで以下をそのまま貼り付けて送信する。  
   ```
   %6PPi37DBxP4lDwlriuaxP15HaDJpsUXY5TspVmie%
   ```
 
-### 10. CSP Bypass
+### 11. CSP Bypass
 https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074  
 の「5. CSP Bypass XSS」にも詳細があります。
 - プロフィールページを開きます。
