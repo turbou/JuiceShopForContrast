@@ -8,6 +8,11 @@ npm install @contrast/agent
 npm install
 ```
 
+### 達成率などをクリアする場合は
+```bash
+rm -f ./data/juiceshop.sqlite
+```
+
 ContrastSecurityのチームサーバから、CONTRAST__API__TOKENをコピペして  
 ターミナルに貼り付けるなどしてください。
 または、contrast_security.yamlをDLして、本プロジェクト直下に配置してください。  
