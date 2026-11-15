@@ -127,11 +127,15 @@ http://localhost:3001/#/photo-wall
 
 #### Leaked API key
 - 左メニューにあるカスタマーフィードバックで以下をそのまま貼り付けて送信する。  
-  `%6PPi37DBxP4lDwlriuaxP15HaDJpsUXY5TspVmie%`
+  ```
+  %6PPi37DBxP4lDwlriuaxP15HaDJpsUXY5TspVmie%
+  ```
 
 #### CSP Bypass
 - プロフィールページを開いて、usernameに以下ペイロードを入れて、`Set Username`  
-  `<script>alert(`xss`)</script>`
+  ```
+  <script>alert(`xss`)</script>
+  ```
 
 ### なかなか難しくてチャレンジしても課題解決しないものたち
 #### Security Advisor
