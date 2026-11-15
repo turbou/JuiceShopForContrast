@@ -71,3 +71,8 @@ config/*.yml
 # Misc
 .playwright-mcp/
 cypress/screenshots/
+
+# Contrast
+contrast_security.yaml
+contrast_effective_config.json
+contrast_system_info.json
