@@ -133,11 +133,17 @@ http://localhost:3001/#/photo-wall
 
 #### CSP Bypass
 https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api-via-possible-ways-c746a9012074  
-の「5. CSP Bypass XSS」にも詳細があります。でも、うまくいったりいかなかったり。  
-- プロフィールページを開いて、usernameに以下ペイロードを入れて、`Set Username`  
+の「5. CSP Bypass XSS」にも詳細があります。
+- プロフィールページを開きます。
+- Image URLに以下を入れて、**Link Image**をクリック  
   ```
-  <script>alert(`xss`)</script>
+  https://a.png; script-src 'unsafe-inline' 'self' 'unsafe-eval'https://code.getmdl.io http://ajax.googleapis.com
   ```
+- 次にUsernameに以下ペイロードを入れて、**Set Username**をクリック  
+  ```
+  <<a<ascript>alert(`xss`)</script>
+  ```
+アラートが出れば課題成功です。
 
 ### なかなか難しくてチャレンジしても課題解決しないものたち
 #### Security Advisor
