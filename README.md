@@ -81,7 +81,7 @@ npm run test:api2
 #### Reflected XSS
 https://cysec148.hatenablog.com/entry/2021/06/26/085030 を参考に購入まで完了します。  
 そして、注文追跡画面を開いてから、URLが以下のようになるように`id`クエリパラメータにペイロードを入れて実行します。  
-`localhost:3001/#/track-result/new?id=<iframe src="javascript:alert(`xss`)">`
+`localhost:3001/#/track-result/new?id=<iframe src="javascript:alert('xss')">`
 
 #### SSRF
 - ユーザープロファイルのgravater urlに以下を貼り付けてLINK  
