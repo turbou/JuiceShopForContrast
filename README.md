@@ -188,7 +188,7 @@ Arguments:{"discount":50}
 ## Scanについて
 以下コマンドで本プロジェクトをzipして、Scanにアップロードしました。  
 ```bash
-zip -r juiceshop.zip JuiceShopForContrast -x "*/test/*" "*/logs/*" "*/screenshots/*" "*/node_modules/*" "*/.git/*" "*/dist/*" "*/.contrast/*" "*/build/*"
+zip -r juiceshop.zip JuiceShopForContrast -x "*/test/*" "*/logs/*" "*/screenshots/*" "*/.git/*" "*/dist/*" "*/.contrast/*" "*/build/*"
 ```
 
 以上
