@@ -6,9 +6,9 @@
 - ASSESSのルートカバレッジ: 80%
 - ASSESSで検知した脆弱性（ポリシー全てON）
   - Critical: 6
-  - High: 10
-  - Medium: 4
-  - Note: 8
+  - High: 12
+  - Medium: 5
+  - Note: 9
 
 ## 前提条件
 Mac上で、Node v24.22.2 で検証しています。
