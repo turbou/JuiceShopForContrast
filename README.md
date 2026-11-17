@@ -89,6 +89,7 @@ npm run test:api2
   ```
   #{global.process.mainModule.require('child_process').execSync('id').toString()}
   ```
+ここで課題解決できない場合は、とりあえず先に進めてください。**11. CSP Bypass**でクリアできる場合もあります。
 
 ### 3. DOM XSS
 - 検索ボックスに以下を入力して検索  
