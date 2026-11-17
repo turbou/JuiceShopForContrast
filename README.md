@@ -4,7 +4,7 @@
 とりあえず以下達成できています。  
 - JuiceShopのハッキングチャレンジ率: 95%
 - ASSESSのルートカバレッジ: 81%
-- ASSESSで検知した脆弱性（ポリシー全てON）
+- ASSESSで検知した脆弱性 **（ASSESSポリシー全てON）**
   - Critical: 6
   - High: 12
   - Medium: 5
@@ -46,6 +46,9 @@ https://pwning.owasp-juice.shop/companion-guide/snapshot/part1/running.html#_set
 # 以下で起動確認
 lsof -i :11434
 ```
+
+### ASSESSの検知ポリシーの設定
+すべてONにしておいてください。デフォルトで重大度NOTEの脆弱性の検知ポリシーがOFFになっているものがあります。
 
 ### スコアボードの表示
 これも課題の１つとなっています。1つクリアになります。  
