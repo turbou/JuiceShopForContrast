@@ -99,6 +99,7 @@ npm run test:api2
 
 ### 4. Reflected XSS
 https://cysec148.hatenablog.com/entry/2021/06/26/085030 を参考に購入まで完了します。  
+既存ユーザー（例：adminとか）で、カートに入れるから購入確定までやったほうがAddressとかカード情報が既にあるので楽です。  
 そして、注文追跡画面を開いてから、URLが以下のようになるように`id`クエリパラメータにペイロードを入れて実行します。  
 ```
 localhost:3001/#/track-result/new?id=<iframe src="javascript:alert(`xss`)">
