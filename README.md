@@ -164,6 +164,15 @@ https://medium.com/@Aman-Gupta.cse/making-xss-bypass-on-web-application-with-api
   ```
 アラートが出れば課題成功です。
 
+### 12. Empty User Registration
+ブラウザのRestAPIツール（ResterやTalendなど）を使ってAPIを発行します。別タブでログイン済みにしておいてください。  
+- POSTメソッド
+- http://localhost:3001/api/Users
+- 以下のjsonペイロード  
+  ```json
+  {"email":"","password":"","passwordRepeat":""}
+  ```
+
 ## なかなか難しくてチャレンジしても課題解決しないものたち
 ### 1. Security Advisor
 本プロジェクトの`.well-known/csaf`下にある未解決のissueから、CVE番号を探して、それについて問い合わせるという課題  
